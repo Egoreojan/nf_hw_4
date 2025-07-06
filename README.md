@@ -48,6 +48,5 @@ fn_select_flight()..., которые должны:
 3. Если передаётся параметр shcedual_departure и знак отнощения («>», «<»), то должна быть
 вызвана функция, которая вернёт курсор, удавлетворяющий неравенству («shcedual_departure > a_shcedual_departure» или «shcedual_departure < a_shcedual_departure» соответственно).
 
-[Перегруженные функции FN_SELECT_FLIGHT](./results/task2/fn_select_flight.sql)
-
-[Дополнительные функции FN_SELECT_FLIGHT](./results/task2/additional_functions.sql)
+[Перегруженная функция FN_SELECT_FLIGHT](./results/task2/fn_select_flight.sql)
+[Вспомогательные функции FN_SELECT_FLIGHT](./results/task2/fn_helper.sql)
