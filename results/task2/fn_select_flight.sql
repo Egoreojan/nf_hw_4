@@ -4,12 +4,7 @@ RETURNS refcursor AS $$
 DECLARE
     result_cursor refcursor;
 BEGIN
-    OPEN result_cursor FOR
-        SELECT flight_id, flight_no, scheduled_departure, scheduled_arrival,
-               departure_airport, arrival_airport, status, aircraft_code,
-               actual_departure, actual_arrival
-        FROM bookings.flights
-        WHERE flight_id = p_flight_id;
+    result_cursor := fn_select_flights(p_flight_id);
     RETURN result_cursor;
 END;
 $$ LANGUAGE plpgsql;
